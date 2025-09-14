@@ -19,7 +19,7 @@
   <body class="bg-black text-white font-inter">
     <!-- Header with Hero -->
     <div
-      class="relative h-screen bg-no-repeat bg-cover bg-center"
+      class="relative min-h-[60%] bg-no-repeat bg-cover bg-center"
       style="
         background-image: url('images/c3172bdce1ddc0c49161cd3e35193ecf (1).jpg');
       "
@@ -28,7 +28,7 @@
         class="text-white p-4 md:p-6 lg:p-8 flex flex-col md:flex-row justify-between items-center relative z-20"
       >
         <!-- Social Icons -->
-        <div class="flex space-x-3 mb-4 md:mb-0">
+        <div class="flex space-x-3 mb-4 md:mb-0 hidden md:flex">
           <a href="#" class="hover:text-pink-600"
             ><i class="fab fa-facebook-f"></i
           ></a>
@@ -45,14 +45,18 @@
 
         <!-- Logo and Navigation -->
         <div class="flex flex-col items-center mb-4 md:mb-0">
-          <div class="flex items-center space-x-2">
+          <div class="flex items-center space-x-6 justify-center w-full">
             <img
-              src="https://via.placeholder.com/40"
-              alt=""
-              class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+              src="images/download__2_-removebg-preview.png"
+              alt="Logo"
+              class="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain"
             />
+            <h1
+              class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-center"
+            >
+              ECSTASY
+            </h1>
           </div>
-          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">ECSTASY</h1>
           <!-- Desktop Navigation -->
           <nav class="hidden md:flex space-x-4 mt-2 md:mt-0">
             <a
@@ -89,7 +93,7 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="md:hidden fixed top-16 left-0 w-full bg-black p-4 space-y-2 hidden item-center transition-all duration-300 z-40 text-white"
+        class="md:hidden fixed top-16 left-0 w-full bg-black p-4 space-y-2 hidden items-center transition-all duration-300 z-40 text-white"
       >
         <a
           href="#"
@@ -379,12 +383,17 @@
       <div class="container mx-auto px-4 md:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
           <!-- Footer Logo -->
-          <div class="text-center md:text-left">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Footer Logo"
-              class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 mx-auto md:mx-0 mb-4"
-            />
+          <div
+            class="flex flex-col items-center justify-center md:justify-start space-y-4"
+          >
+            <div class="flex items-center space-x-6">
+              <img
+                src="images/download__2_-removebg-preview.png"
+                alt="Footer Logo"
+                class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+              />
+              <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">ECSTASY</h1>
+            </div>
             <p class="text-sm text-gray-400">
               © 2025 Ecstasy. All rights reserved.
             </p>
@@ -463,11 +472,18 @@
     </footer>
 
     <script>
-      document
-        .getElementById("hamburger")
-        .addEventListener("click", function () {
-          document.getElementById("mobile-menu").classList.toggle("hidden");
-        });
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      window.addEventListener("scroll", () => {
+        if (!mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
     </script>
   </body>
 </html>
