@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecstasy - The Soul of Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body class="bg-black text-white font-inter">
+    <!-- Header with Hero -->
+    <div
+      class="relative h-screen bg-no-repeat bg-cover bg-center"
+      style="
+        background-image: url('images/c3172bdce1ddc0c49161cd3e35193ecf (1).jpg');
+      "
+    >
+      <header
+        class="text-white p-4 md:p-6 lg:p-8 flex flex-col md:flex-row justify-between items-center relative z-20"
+      >
+        <!-- Social Icons -->
+        <div class="flex space-x-3 mb-4 md:mb-0">
+          <a href="#" class="hover:text-pink-600"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="hover:text-pink-600"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-pink-600"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="#" class="hover:text-pink-600"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+
+        <!-- Logo and Navigation -->
+        <div class="flex flex-col items-center mb-4 md:mb-0">
+          <div class="flex items-center space-x-2">
+            <img
+              src="https://via.placeholder.com/40"
+              alt=""
+              class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+            />
+          </div>
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">ECSTASY</h1>
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-4 mt-2 md:mt-0">
+            <a
+              href="#"
+              class="bg-pink-700 rounded-full px-2 py-1 hover:bg-pink-600 hover:text-white"
+              >Home</a
+            >
+            <a href="#" class="px-2 py-1 hover:text-pink-600">Bio</a>
+            <a href="#" class="px-2 py-1 hover:text-pink-600">Music</a>
+            <a href="#" class="px-2 py-1 hover:text-pink-600">Events</a>
+            <a href="#" class="px-2 py-1 hover:text-pink-600">News</a>
+            <a href="#" class="px-2 py-1 hover:text-pink-600">Portfolio</a>
+          </nav>
+        </div>
+
+        <!-- Get in Touch Button (Desktop) -->
+        <button
+          class="hidden md:flex bg-transparent border text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-pink-700 transition duration-300 items-center justify-center"
+        >
+          Get in Touch
+        </button>
+
+        <!-- Hamburger Icon (Mobile Only) -->
+        <button
+          id="hamburger"
+          class="md:hidden flex flex-col space-y-1 absolute right-4 top-4 z-30"
+        >
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </button>
+      </header>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden fixed top-16 left-0 w-full bg-black p-4 space-y-2 hidden item-center transition-all duration-300 z-40 text-white"
+      >
+        <a
+          href="#"
+          class="block text-pink-600 rounded-full px-2 py-1 hover:bg-pink-700 hover:text-white"
+          >Home</a
+        >
+        <a href="#" class="px-2 py-1 block hover:text-pink-600">Bio</a>
+        <a href="#" class="px-2 py-1 block hover:text-pink-600">Music</a>
+        <a href="#" class="px-2 py-1 block hover:text-pink-600">Events</a>
+        <a href="#" class="px-2 py-1 block hover:text-pink-600">News</a>
+        <a href="#" class="px-2 py-1 block hover:text-pink-600">Portfolio</a>
+        <button
+          class="bg-gray-800 text-white w-full py-2 rounded-full hover:bg-gray-700 transition duration-300 mt-2"
+        >
+          Get in Touch
+        </button>
+      </div>
+
+      <!-- Hero Section -->
+      <section>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div
+          class="container mx-auto relative z-10 flex flex-col items-center justify-center h-full text-center p-4 md:p-8 lg:p-12"
+        >
+          <h1
+            class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 lg:mb-8"
+          >
+            The Soul of Music
+          </h1>
+          <p
+            class="text-sm md:text-base lg:text-lg text-white mb-4 md:mb-6 lg:mb-8 max-w-xl"
+          >
+            Sac ec nih velit nih vulputate interdum. Etiam fermentum elit in
+            metus scelerisque, vel euismod justo condimentum.
+          </p>
+          <button
+            class="bg-transparent border text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full hover:bg-pink-700 transition duration-300"
+          >
+            Upcoming Event
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Latest Album Section -->
+    <section class="bg-pink-700 py-4 md:py-6 lg:py-8">
+      <div
+        class="container mx-auto px-4 md:px-6 lg:px-8 flex items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 lg:space-x-8"
+      >
+        <!-- Album Image -->
+        <div
+          class="w-16 h-16 md:w-16 h-20 lg:w-24 h-24 rounded-full overflow-hidden"
+        >
+          <img
+            src="images/Microfone vintage em um fundo preto _ imagem Premium gerada com IA.jpeg"
+            alt="Album Art"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Album Details -->
+        <div class="flex-1 text-center md:text-left">
+          <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white">
+            Latest Album
+          </h3>
+          <p class="text-sm md:text-base lg:text-lg text-gray-300 mt-1">
+            Lorem ipsum dolor sit amet.
+          </p>
+          <div
+            class="bg-black h-8 md:h-8 lg:h-10 w-full mt-2 flex items-center justify-between px-2 md:px-3 lg:px-4 rounded-md"
+          >
+            <button
+              class="text-white px-2 py-1 md:px-3 md:py-1 lg:px-4 lg:py-2 rounded-full flex items-center space-x-1 transition duration-300"
+            >
+              <span>▶</span>
+              <span class="text-xs md:text-sm lg:text-base">Music Now</span>
+            </button>
+            <div
+              class="flex space-x-2 md:space-x-3 lg:space-x-4 text-sm md:text-base lg:text-lg text-white"
+            >
+              <span>👍 32,170</span>
+              <span>🎵 40,300</span>
+              <span>💬 20,530</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-8 md:py-12 lg:py-16">
+      <div
+        class="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center"
+      >
+        <!-- Text Content -->
+        <div class="w-full md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 flex items-center justify-center md:justify-start"
+          >
+            <span class="text-white">A Few Words About ECSTASY </span>
+            <!--<span class="text-pink-600 ml-2">ECSTASY</span>-->
+          </h2>
+          <p class="text-sm md:text-base lg:text-lg mb-4 max-w-xl">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ex
+            aut quasi fugiat nam corporis adipisci cumque eveniet. Maxime sint
+            est corrupti modi, nobis voluptatum doloremque. Aut repellat
+            cupiditate deleniti?
+          </p>
+          <button
+            class="bg-transparent border text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full hover:bg-pink-700 transition duration-300"
+          >
+            More About Band
+          </button>
+        </div>
+
+        <!-- Image and Musical Notes -->
+        <div class="w-full md:w-1/2 flex justify-center relative mt-6 md:mt-0">
+          <div
+            class="w-64 h-64 md:w-80 h-80 lg:w-96 h-96 rounded-full overflow-hidden"
+          >
+            <img
+              src="images/Untitled design.png"
+              alt="Band Image"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="absolute text-4xl md:text-5xl lg:text-6xl text-pink-600 -top-4 md:-top-6 lg:-top-8 -left-4 md:-left-6 lg:-left-8"
+          >
+            ♪
+          </div>
+          <div
+            class="absolute text-4xl md:text-5xl lg:text-6xl text-white -bottom-4 md:-bottom-6 lg:-bottom-8 -right-4 md:-right-6 lg:-right-8"
+          >
+            <i class="fas fa-music"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event List Section -->
+    <section class="bg-pink-700 p-4 md:p-6 lg:p-8">
+      <h3
+        class="text-xl md:text-2xl lg:text-3xl text-center font-bold mb-4 md:mb-6 lg:mb-8 text-white"
+      >
+        Event List
+      </h3>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 container mx-auto"
+      >
+        <div class="p-4 rounded-lg shadow-md text-center text-white">
+          <img
+            src="images/06d850ae283a52ab7d0aef7f408aa84f.jpg"
+            alt="Event 1"
+            class="w-full max-h-[30vh] md:max-h-[30vh] lg:max-h-[30vh] rounded-t-lg object-cover"
+          />
+          <h4 class="mt-4 text-lg md:text-xl lg:text-2xl font-semibold">
+            DJ Night Party
+          </h4>
+          <p class="mt-2 text-sm md:text-base lg:text-lg text-gray-700">
+            Nov 19, 2025
+          </p>
+        </div>
+        <div class="p-4 rounded-lg shadow-md text-center text-white">
+          <img
+            src="images/IMG_20250912_211812.jpg"
+            alt="Event 2"
+            class="w-full max-h-[30vh] md:max-h-[30vh] lg:max-h-[30vh] rounded-t-lg object-cover"
+          />
+          <h4 class="mt-4 text-lg md:text-xl lg:text-2xl font-semibold">
+            The Mission
+          </h4>
+          <p class="mt-2 text-sm md:text-base lg:text-lg text-gray-700">
+            Nov 19, 2025
+          </p>
+        </div>
+        <div class="p-4 rounded-lg shadow-md text-center text-white">
+          <img
+            src="images/21e9f4fd51d3adefe0ee0dd7b56cb8ad.jpg"
+            alt="Event 3"
+            class="w-full max-h-[30vh] md:max-h-[30vh] lg:max-h-[30vh] rounded-t-lg object-cover"
+          />
+          <h4 class="mt-4 text-lg md:text-xl lg:text-2xl font-semibold">
+            Planet Ibiza
+          </h4>
+          <p class="mt-2 text-sm md:text-base lg:text-lg text-gray-700">
+            Nov 19, 2025
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Section -->
+    <section class="py-8 md:py-12 lg:py-16">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 md:mb-10 lg:mb-12"
+        >
+          Music
+        </h2>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8"
+        >
+          <!-- Hip Hop -->
+          <div class="text-center">
+            <div
+              class="w-40 h-40 md:w-48 h-48 lg:w-56 h-56 rounded-full overflow-hidden mx-auto"
+            >
+              <img
+                src="images/576cbf5652c53e7cfa1b9cc5ee79f07d.jpg"
+                alt="Hip Hop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-lg md:text-xl lg:text-2xl text-white mt-4">
+              Hip Hop
+            </h3>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400 mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates nisi totam maxime.
+            </p>
+          </div>
+
+          <!-- Rock -->
+          <div class="text-center">
+            <div
+              class="w-40 h-40 md:w-48 h-48 lg:w-56 h-56 rounded-full overflow-hidden mx-auto"
+            >
+              <img
+                src="images/576cbf5652c53e7cfa1b9cc5ee79f07d.jpg"
+                alt="Rock"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-lg md:text-xl lg:text-2xl text-white mt-4">Rock</h3>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400 mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates nisi totam maxime.
+            </p>
+          </div>
+
+          <!-- Classic -->
+          <div class="text-center">
+            <div
+              class="w-40 h-40 md:w-48 h-48 lg:w-56 h-56 rounded-full overflow-hidden mx-auto"
+            >
+              <img
+                src="images/576cbf5652c53e7cfa1b9cc5ee79f07d.jpg"
+                alt="Classic"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-lg md:text-xl lg:text-2xl text-white mt-4">
+              Classic
+            </h3>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400 mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates nisi totam maxime.
+            </p>
+          </div>
+        </div>
+        <button
+          class="bg-transparent border text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full hover:bg-pink-700 transition duration-300 mt-6 md:mt-10 lg:mt-12"
+        >
+          Listen to Music
+        </button>
+      </div>
+    </section>
+
+    <!-- Upcoming Shows Section -->
+    <section
+      class="relative h-48 md:h-64 lg:h-80 bg-cover bg-center"
+      style="
+        background-image: url('images/c3172bdce1ddc0c49161cd3e35193ecf (1).jpg');
+      "
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="relative z-10 text-center p-4 md:p-6 lg:p-8">
+        <h3 class="text-xl md:text-2xl lg:text-3xl font-bold text-white">
+          Upcoming Shows
+        </h3>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 md:py-8 lg:py-10">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
+          <!-- Footer Logo -->
+          <div class="text-center md:text-left">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Footer Logo"
+              class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 mx-auto md:mx-0 mb-4"
+            />
+            <p class="text-sm text-gray-400">
+              © 2025 Ecstasy. All rights reserved.
+            </p>
+          </div>
+
+          <!-- Address Section -->
+          <div>
+            <h3
+              class="text-lg md:text-xl lg:text-2xl font-bold mb-2 text-pink-600"
+            >
+              Address
+            </h3>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400">
+              123 Music Lane
+            </p>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400">
+              Lagos, Nigeria
+            </p>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400">
+              Phone: +234 123 456 7890
+            </p>
+          </div>
+
+          <!-- Contact Section -->
+          <div>
+            <h3
+              class="text-lg md:text-xl lg:text-2xl font-bold mb-2 text-pink-600"
+            >
+              Contact
+            </h3>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400">
+              Email: info@ecstasy.com
+            </p>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400">
+              Support: support@ecstasy.com
+            </p>
+            <p class="text-sm md:text-base lg:text-lg text-gray-400">
+              Follow us:
+            </p>
+            <div class="flex justify-start md:justify-start space-x-4 mt-2">
+              <a href="#" class="hover:text-pink-600"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-pink-600"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-pink-600"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-pink-600"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Privacy & Legal Section -->
+          <div>
+            <h3
+              class="text-lg md:text-xl lg:text-2xl font-bold mb-2 text-pink-600"
+            >
+              Legal
+            </h3>
+            <ul class="text-sm md:text-base lg:text-lg space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-pink-600">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-pink-600">Terms of Service</a>
+              </li>
+              <li><a href="#" class="hover:text-pink-600">Cookie Policy</a></li>
+              <li><a href="#" class="hover:text-pink-600">Legal Notice</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
